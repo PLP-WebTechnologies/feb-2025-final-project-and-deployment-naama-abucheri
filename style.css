@@ -1,0 +1,73 @@
+/* Reset some basics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff; /* White background */
+  color: #444; /* Soft dark grey text */
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  font-weight: 600;
+}
+
+nav ul li a {
+  color: #888; /* Grey */
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #f8cce7; /* Soft pink highlight */
+  color: #c91f77; /* Dark pink */
+  box-shadow: 0 2px 5px rgba(201, 31, 119, 0.3);
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+h1 {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 3rem;
+  color: #c91f77; /* Pink */
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.15rem;
+  margin-bottom: 18px;
+  color: #666;
+}
+
+/* Responsive Nav */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+}

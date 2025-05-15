@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery | WanderChic</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #f9f2f8;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #d48abf;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #d48abf;
+      font-weight: 500;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    header {
+      background-color: #f9f2f8;
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 2px solid #e0e0e0;
+    }
+    h1 {
+      color: #d48abf;
+    }
+    .content {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s ease;
+    }
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+    .caption {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 0.5rem;
+    }
+    footer {
+      background-color: #eee;
+      padding: 1rem;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="logo">WanderChic</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="destinations.html">Destinations</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    
+  </ul>
+</nav>
+
+<!-- Header -->
+<header>
+  <h1>Travel Moments</h1>
+  <p>Pretty places. Dreamy memories. Insta-worthy shots 📸</p>
+</header>
+
+<!-- Gallery Content -->
+<div class="content">
+  <h2>My Favorite Captures</h2>
+  <p>Every photo tells a story, and every destination left a mark on my heart. Here's a peek into my travel scrapbook — elegant moments, pink sunsets, cobbled streets, and all the glam vibes 💖</p>
+
+  <div class="gallery-grid">
+    <div>
+      <img src="https://source.unsplash.com/250x250/?beach,sunset" alt="Beach">
+      <p class="caption">Sunset in Bali 🌅</p>
+    </div>
+    <div>
+      <img src="https://source.unsplash.com/250x250/?paris,eiffel" alt="Paris">
+      <p class="caption">Paris Chic 🇫🇷</p>
+    </div>
+    <div>
+      <img src="https://source.unsplash.com/250x250/?mountains,girl" alt="Hiking">
+      <p class="caption">Alpine Escape ⛰️</p>
+    </div>
+    <div>
+      <img src="https://source.unsplash.com/250x250/?city,lights" alt="City">
+      <p class="caption">City Nights ✨</p>
+    </div>
+    <div>
+      <img src="https://source.unsplash.com/250x250/?lake,reflection" alt="Lake">
+      <p class="caption">Mirror Lake Calm 💧</p>
+    </div>
+    <div>
+      <img src="https://source.unsplash.com/250x250/?flower,pink" alt="Flower">
+      <p class="caption">Spring Blossoms 🌸</p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  &copy; 2025 WanderChic. Created with love by Naama 💕 | Call me: 0707438686
+</footer>
+
+</body>
+</html>

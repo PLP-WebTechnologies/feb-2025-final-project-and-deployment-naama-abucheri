@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gallery | WanderChic</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <style>
+    /* Inline styles specific to gallery */
+    .gallery-container {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+    h2 {
+      color: #d48abf;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: 700;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .grid img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(212, 138, 191, 0.3);
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .grid img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(212, 138, 191, 0.6);
+    }
+    p.description {
+      text-align: center;
+      color: #555;
+      font-style: italic;
+      margin-top: 1rem;
+      font-family: 'Segoe UI', sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav style="background-color:#f9f2f8; padding:1rem; border-bottom:2px solid #e0e0e0;">
+    <ul style="display:flex; justify-content:center; gap:30px; list-style:none; margin:0; padding:0; font-weight:600;">
+      <li><a href="index.html" style="color:#d48abf; text-decoration:none;">Home</a></li>
+      <li><a href="about.html" style="color:#333;">About</a></li>
+      <li><a href="destinations.html" style="color:#333;">Destinations</a></li>
+      <li><a href="gallery.html" style="color:#d48abf;">Gallery</a></li>
+      
+    </ul>
+  </nav>
+</header>
+
+<div class="gallery-container">
+  <h2>Travel Gallery</h2>
+  <p class="description">A collection of dreamy, stylish moments from around the globe 🌸✨</p>
+  
+  <div class="grid">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Sunset over the beach" class="gallery-img" />
+    <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80" alt="Chic woman walking in Paris" class="gallery-img" />
+    <img src="https://images.unsplash.com/photo-1468071174046-657d9d351a40?auto=format&fit=crop&w=800&q=80" alt="Elegant cafe terrace" class="gallery-img" />
+    <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?auto=format&fit=crop&w=800&q=80" alt="Vintage car and flowers" class="gallery-img" />
+    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80" alt="Mountain landscape with pink flowers" class="gallery-img" />
+    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Stylish woman with suitcase" class="gallery-img" />
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Tropical beach palms" class="gallery-img" />
+    <img src="https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c?auto=format&fit=crop&w=800&q=80" alt="Pretty street market" class="gallery-img" />
+  </div>
+</div>
+
+<footer style="background-color:#eee; padding:1rem; text-align:center; font-size:14px; margin-top:3rem; font-family:'Segoe UI', sans-serif;">
+  <p>📞 Naama: 0707438686</p>
+  <p>
+    <a href="#" style="margin: 0 10px; color:#d48abf; text-decoration:none; font-weight:bold;">Instagram</a> |
+    <a href="#" style="margin: 0 10px; color:#d48abf; text-decoration:none; font-weight:bold;">Facebook</a> |
+    <a href="#" style="margin: 0 10px; color:#d48abf; text-decoration:none; font-weight:bold;">Twitter</a>
+  </p>
+  <p>&copy; 2025 WanderChic. All rights reserved 💕</p>
+</footer>
+
+</body>
+</html>

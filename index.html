@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home - Travel Blog</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Additional styling for index page */
+
+    main {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .intro h1 {
+      font-size: 3rem;
+      color: #c91f77; /* pink */
+      margin-bottom: 10px;
+    }
+
+    .intro p {
+      font-size: 1.2rem;
+      color: #555;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .section h2 {
+      color: #c91f77;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #c91f77;
+      padding-bottom: 5px;
+      width: fit-content;
+    }
+
+    .featured-destinations {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .destination-card {
+      background: #f9f9f9;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(201, 31, 119, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .destination-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(201, 31, 119, 0.2);
+    }
+
+    .destination-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 3px solid #c91f77;
+    }
+
+    .destination-card h3 {
+      padding: 15px;
+      color: #333;
+      font-size: 1.3rem;
+      margin: 0;
+    }
+
+    .travel-tips, .blog-preview {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .tip, .blog-post {
+      flex: 1 1 45%;
+      background: #f9f9f9;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(201, 31, 119, 0.1);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .tip:hover, .blog-post:hover {
+      box-shadow: 0 8px 15px rgba(201, 31, 119, 0.2);
+    }
+
+    .tip h3, .blog-post h3 {
+      margin-top: 0;
+      color: #c91f77;
+    }
+
+    .tip p, .blog-post p {
+      color: #555;
+      line-height: 1.5;
+    }
+
+    footer {
+      background-color: #eee;
+      color: #444;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 0.9rem;
+      border-top: 1px solid #ccc;
+    }
+
+    footer .contact-info {
+      margin-bottom: 10px;
+    }
+
+    footer .social-icons a {
+      margin: 0 10px;
+      color: #c91f77;
+      text-decoration: none;
+      font-size: 1.4rem;
+      transition: color 0.3s ease;
+    }
+
+    footer .social-icons a:hover {
+      color: #8b1d5b;
+    }
+
+    /* Simple social media SVG icons styling */
+    svg {
+      vertical-align: middle;
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+
+    /* Responsive adjustments */
+    @media(max-width: 600px) {
+      .travel-tips, .blog-preview {
+        flex-direction: column;
+      }
+      .tip, .blog-post {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h1>Welcome to Your Dream Travel Blog</h1>
+      <p>Discover beautiful places, expert travel tips, and inspiring stories wrapped in elegance and charm. Your perfect getaway starts here!</p>
+    </section>
+
+    <section class="section featured-destinations">
+      <h2>Featured Destinations</h2>
+      <div class="destination-card">
+        <img src="https://source.unsplash.com/400x300/?paris" alt="Paris" />
+        <h3>Paris, France</h3>
+      </div>
+      <div class="destination-card">
+        <img src="https://source.unsplash.com/400x300/?bali" alt="Bali" />
+        <h3>Bali, Indonesia</h3>
+      </div>
+      <div class="destination-card">
+        <img src="https://source.unsplash.com/400x300/?tokyo" alt="Tokyo" />
+        <h3>Tokyo, Japan</h3>
+      </div>
+      <div class="destination-card">
+        <img src="https://source.unsplash.com/400x300/?santorini" alt="Santorini" />
+        <h3>Santorini, Greece</h3>
+      </div>
+    </section>
+
+    <section class="section travel-tips">
+      <h2>Quick Travel Tips</h2>
+      <div class="tip">
+        <h3>Pack Light</h3>
+        <p>Choose versatile clothing that you can mix and match easily. Less luggage means more freedom!</p>
+      </div>
+      <div class="tip">
+        <h3>Stay Hydrated</h3>
+        <p>Carry a reusable water bottle to keep hydrated and reduce plastic waste.</p>
+      </div>
+    </section>
+
+    <section class="section blog-preview">
+      <h2>Latest Blog Posts</h2>
+      <div class="blog-post">
+        <h3>A Romantic Weekend in Paris</h3>
+        <p>Experience the magic of the city with its cozy cafes, breathtaking views, and charming streets.</p>
+      </div>
+      <div class="blog-post">
+        <h3>Exploring Bali’s Hidden Gems</h3>
+        <p>Discover tranquil beaches, lush jungles, and vibrant local culture off the beaten path.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact-info">
+      <p><strong>Naama</strong> | Phone: 0707438686</p>
+    </div>
+    <div class="social-icons">
+      <a href="#" aria-label="Facebook" title="Facebook" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 5 3.66 9.13 8.44 9.88v-6.99h-2.54v-2.89h2.54V9.41c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.25c-1.23 0-1.62.77-1.62 1.56v1.88h2.78l-.44 2.89h-2.34v6.99C18.34 21.13 22 17 22 12z"/></svg>
+      </a>
+      <a href="#" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-1.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+      </a>
+      <a href="#" aria-label="Twitter" title="Twitter" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.27 4.27 0 001.88-2.36 8.48 8.48 0 01-2.7 1.03 4.22 4.22 0 00-7.19 3.85A12 12 0 013 4.89a4.21 4.21 0 001.31 5.64 4.22 4.22 0 01-1.91-.53v.05a4.21 4.21 0 003.39 4.13 4.27 4.27 0 01-1.9.07 4.22 4.22 0 003.94 2.93A8.48 8.48 0 012 19.54a11.97 11.97 0 006.29 1.84c7.55 0 11.68-6.25 11.68-11.67 0-.18-.01-.36-.02-.54A8.18 8.18 0 0022.46 6z"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
